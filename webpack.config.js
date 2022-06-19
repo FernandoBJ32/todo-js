@@ -1,6 +1,6 @@
-const HtmlWebpack    = NodeRequire('html-webpack-plugin')
-const MiniCssExtract = NodeRequire('mini-css-extract-plugin');
-const CopyPlugin     = NodeRequire("copy-webpack-plugin");
+const HtmlWebpack    = require('html-webpack-plugin')
+const MiniCssExtract = require('mini-css-extract-plugin');
+const CopyPlugin     = require("copy-webpack-plugin");
 
 module.exports = {
     
