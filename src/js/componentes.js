@@ -1,6 +1,6 @@
 
 // referencias en el html
-import { CleanPlugin } from "webpack";
+// import { CleanPlugin } from "webpack";
 import { Todo } from "../classes";
 import { todoList} from "../index";
 
@@ -13,7 +13,7 @@ const anchorFiltros = document.querySelectorAll(".filtro");
 export const crearTodoHtml = (todo) => {
 
 const htmlTodo = `
-<li class="${(todo.completado) ? "completed" : ""  }  " data-id="${todo.id}">
+<li class="${(todo.completado) ? "completed" : ''  }  " data-id="${todo.id}">
 <div class="view">
     <input class="toggle" type="checkbox"${(todo.completado) ? "checked" : ""  }>
     <label>${todo.tarea}</label>

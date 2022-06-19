@@ -14,7 +14,7 @@ nuevoTodo(todo){
 
 }
 eliminarTodo (id) {
-this.todos = this.todos.filter(todo => todo.id != id);
+this.todos = this.todos.filter(todo => todo.id != id)
 this.guardarLocalStorage();
 
 }
@@ -33,6 +33,7 @@ for (const todo of this.todos){
 }
 
 eliminarCompletados (){
+
     this.todos = this.todos.filter(todo => !todo.completado);
     this.guardarLocalStorage();
 
@@ -55,7 +56,7 @@ cargarLocalStorage(){
 //     this.todos = []; 
 //    }
 this.todos = (localStorage.getItem("todo")) 
-                ?JSON.parse(localStorage.getItem("todo")) 
+                ? JSON.parse(localStorage.getItem("todo")) 
                 : [] ;
 // this.todos = this.todos.map(obj => Todo.fromJson(obj));
 this.todos = this.todos.map(Todo.fromJson);
